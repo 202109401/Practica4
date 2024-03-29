@@ -1,0 +1,21 @@
+POST http://localhost:8080/api/peliculas HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo":"Titanic",
+    "año" : 1997
+}
+
+
+###
+GET http://localhost:8080/api/peliculas/Titanic
+###
+PUT http://localhost:8080/api/peliculas/Titanic
+Content-Type: application/json
+
+{
+    "titulo": "Titanic: Edición Especial",
+    "año": 2022
+}
+###
+DELETE http://localhost:8080/api/peliculas/Titanic
